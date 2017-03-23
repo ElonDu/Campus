@@ -10,9 +10,9 @@
 <HTML xmlns="http://www.w3.org/1999/xhtml">
 <HEAD>
 <META http-equiv=Content-Type content="text/html; charset=utf-8">
-<link type="text/css" href="<%=path%>/css/style.css">
+<META content="MSHTML 6.00.6000.16809" name=GENERATOR>
+<link href="<%=path%>/css/style.css" type="text/css">
 <link rel="stylesheet" href="css/bootstrap.min.css" > 
-
 <script type="text/javascript" src="<%=path%>/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<%=path%>/js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="<%=path%>/js/main.js"></script>
@@ -21,13 +21,13 @@
  <div class="container"> 
 <FORM id=form1 name=form1 action="<%=path%>/user/register" onsubmit="return_checkForm()" method=post>
 
-<TABLE cellSpacing=0 cellPadding=0 width=900 align=center border=0 background=img/login_2.jpg>
+<TABLE cellSpacing=0 cellPadding=0 width=900 align=center border=0>
   <TBODY>
   <TR>
-    <TD style="HEIGHT: 105px"><IMG src="<%=path%>/img/login_dl.gif" 
+    <TD style="HEIGHT: 105px"><IMG src="<%=path%>/img/login_1.gif" 
   border=0></TD></TR>
   <TR>
-    <TD >
+    <TD background=img/login_2.jpg height=300>
       <TABLE height=300 cellPadding=0 width=900 border=0>
         <TBODY>
         <TR>
@@ -42,7 +42,7 @@
                 </TD>
                 <TD style="HEIGHT: 28px">
                     <div class="col-sm-25">
-		         		<input type="text" class="form-control" name="userName" onblur="checkCode()" maxlength="20"/>
+		         		<input type="text" class="form-control" name="userInfoVo.userName" onblur="checkCode()" maxlength="20"/>
 		         	</div>
                 </TD>
                 <TD style="HEIGHT: 28px" width=100>
@@ -62,7 +62,7 @@
                 </TD>
                 <TD style="HEIGHT: 28px">
                     <div class="col-sm-25">
-		         		<input type="password" class="form-control" name="userPwd" maxlength="20"/>
+		         		<input type="password" class="form-control" name="userInfoVo.userPwd" maxlength="20"/>
 		         	</div>
                 </TD>
                 <TD style="HEIGHT: 28px" width=100>
@@ -82,8 +82,7 @@
               <TR>
                 <TD></TD>
                 <TD align="center">
-                 <button type="submit" class="btn btn-default" onclick="login()">登录</button>   
-                 <button type="submit" class="btn btn-default" onclick="toRegist()">注册</button>
+                <button type="submit" class="btn btn-default">注册</button>
                   <TD></TD>
               </TR>
               </TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
