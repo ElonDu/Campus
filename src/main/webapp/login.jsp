@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1 user-scalabe=no">
-<title>demo02</title>
+<title>登陆</title>
 <link rel="stylesheet" href="css/bootstrap.min.css" > 
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
@@ -25,9 +25,6 @@
              <input type="password" class="form-control" name="pwd" />
              </div>
          </div>      
-         <div class="checkbox">
-            <label> <input type="checkbox" />记住密码</label>
-         </div> 
          <button type="submit" class="btn btn-default">登录</button>       	
        </fieldset>           
     </form>
