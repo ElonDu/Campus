@@ -48,12 +48,6 @@
 				</prop>
 			</props>
 		</property>
-		<property name="packagesToScan">
-			<list>
-				<value>com/huifu/auth/hbm/User.hbm.xml</value>
-				<value>com/huifu/auth/hbm/UserPWD.hbm.xml</value>
-			</list>
-		</property>
 	</bean>
 
 	<!-- 事务管理器 -->
@@ -65,4 +59,8 @@
 	<!-- 事务注解处理器 -->
 	<tx:annotation-driven transaction-manager="transactionManager" />
 
+	<!--HibernateTemplate的配置 -->
+	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate4.HibernateTemplate">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
 </beans>
