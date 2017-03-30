@@ -11,11 +11,12 @@
 <HEAD>
 <META http-equiv=Content-Type content="text/html; charset=utf-8">
 <META content="MSHTML 6.00.6000.16809" name=GENERATOR>
+<link rel="stylesheet" href="<%=path%>/css/bootstrap.min.css" > 
 <link href="<%=path%>/css/style.css" type="text/css">
-<link rel="stylesheet" href="css/bootstrap.min.css" > 
 <script type="text/javascript" src="<%=path%>/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<%=path%>/js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="<%=path%>/js/main.js"></script>
+
 </HEAD>
 <BODY>
  <div class="container"> 
@@ -42,10 +43,10 @@
                 </TD>
                 <TD style="HEIGHT: 28px">
                     <div class="col-sm-25">
-		         		<input type="text" class="form-control" name="userInfo.userName" maxlength="20"/>
+		         		<input type="text" class="form-control" name="userInfo.userName" onblur="checkUserName()" maxlength="20"/>
 		         	</div>
                 </TD>
-                <TD style="HEIGHT: 28px" width=100>
+                <TD style="HEIGHT: 28px" width=120>
                 	<SPAN id="codeId" style="FONT-WEIGHT: bold;"></SPAN>
                  </TD>
               </TR>
@@ -66,8 +67,7 @@
 		         	</div>
                 </TD>
                 <TD style="HEIGHT: 28px" width=100>
-                	<SPAN id="codeId" style="FONT-WEIGHT: bold;"></SPAN>
-                	<SPAN id=RequiredFieldValidator4 
+                	<SPAN 
                   	style="FONT-WEIGHT: bold; VISIBILITY: hidden; COLOR: white">请输入密码</SPAN>
                  </TD>
                 

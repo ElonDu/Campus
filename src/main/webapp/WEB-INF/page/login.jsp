@@ -10,8 +10,8 @@
 <HTML xmlns="http://www.w3.org/1999/xhtml">
 <HEAD>
 <META http-equiv=Content-Type content="text/html; charset=utf-8">
-<link type="text/css" href="<%=path%>/css/style.css">
 <link rel="stylesheet" href="css/bootstrap.min.css" > 
+<link type="text/css" href="<%=path%>/css/style.css">
 
 <script type="text/javascript" src="<%=path%>/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<%=path%>/js/jquery-1.11.1.min.js"></script>
@@ -42,7 +42,7 @@
                 </TD>
                 <TD style="HEIGHT: 28px">
                     <div class="col-sm-25">
-		         		<input type="text" class="form-control" name="userName" onblur="checkCode()" maxlength="20"/>
+		         		<input type="text" class="form-control" name="userName" maxlength="20"/>
 		         	</div>
                 </TD>
                 <TD style="HEIGHT: 28px" width=100>
@@ -62,11 +62,10 @@
                 </TD>
                 <TD style="HEIGHT: 28px">
                     <div class="col-sm-25">
-		         		<input type="password" class="form-control" name="userPwd" maxlength="20"/>
+		         		<input type="password" class="form-control" name="userPassword.userPsw" maxlength="20"/>
 		         	</div>
                 </TD>
                 <TD style="HEIGHT: 28px" width=100>
-                	<SPAN id="codeId" style="FONT-WEIGHT: bold;"></SPAN>
                 	<SPAN id=RequiredFieldValidator4 
                   	style="FONT-WEIGHT: bold; VISIBILITY: hidden; COLOR: white">请输入密码</SPAN>
                  </TD>

@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.huifu.auth.entity.UserInfo;
 import com.huifu.auth.entity.UserInfoExample;
+import com.huifu.auth.entityVo.UserInfoVo;
 
 public interface UserInfoMapper {
     int countByExample(UserInfoExample example);
@@ -28,4 +29,6 @@ public interface UserInfoMapper {
     int updateByPrimaryKeySelective(UserInfo record);
 
     int updateByPrimaryKey(UserInfo record);
+    
+    List<UserInfoVo> selectByNameAndPassWord(UserInfoVo vo); 
 }

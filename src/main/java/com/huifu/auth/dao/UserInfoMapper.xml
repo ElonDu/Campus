@@ -12,6 +12,13 @@
     <result column="USER_STATE" property="userState" jdbcType="VARCHAR" />
     <result column="LST_UPD_TIME" property="lstUpdTime" jdbcType="VARCHAR" />
   </resultMap>
+  
+   <resultMap id="BaseResultMap1" type="com.huifu.auth.entityVo.UserInfoVo" >
+    <id column="USER_ID" property="userId" jdbcType="INTEGER" />
+    <result column="USER_NAME" property="userName" jdbcType="VARCHAR" />
+    <result column="USER_PSW" property="userPsw" jdbcType="VARCHAR" />
+  </resultMap>
+  
   <sql id="Example_Where_Clause" >
     <where >
       <foreach collection="oredCriteria" item="criteria" separator="or" >
@@ -104,7 +111,16 @@
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.huifu.auth.entity.UserInfo" >
+  
+  <select id="selectByNameAndPassWord" resultMap="BaseResultMap1" parameterType="java.lang.String" >
+    select 
+    u.user_id,u.user_name,p.user_psw 
+    from user_info u, user_password p 
+    where u.USER_NAME =  #{userInfo.userName,jdbcType=VARCHAR} and 
+          p.USER_PSW = #{userPassword.userPsw,jdbcType=VARCHAR} and
+          u.USER_ID = p.USER_ID
+  </select>
+  <insert id="insert" parameterType="com.huifu.auth.entity.UserInfo" useGeneratedKeys="true" keyProperty="userId">
     insert into user_info (USER_ID, USER_NAME, GENDER, 
       ROLE_ID, USER_MOBILE, USER_ADDR, 
       CREATE_TIME, USER_STATE, LST_UPD_TIME
