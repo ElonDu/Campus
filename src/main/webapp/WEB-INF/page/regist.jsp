@@ -19,7 +19,7 @@
 </HEAD>
 <BODY>
  <div class="container"> 
-<FORM id=form1 name=form1 action="<%=path%>/user/register" onsubmit="return_checkForm()" method=post>
+<FORM id=form1 name=form1 action="<%=path%>/user/registe"  method=post>
 
 <TABLE cellSpacing=0 cellPadding=0 width=900 align=center border=0>
   <TBODY>
@@ -42,7 +42,7 @@
                 </TD>
                 <TD style="HEIGHT: 28px">
                     <div class="col-sm-25">
-		         		<input type="text" class="form-control" name="userInfoVo.userName" onblur="checkCode()" maxlength="20"/>
+		         		<input type="text" class="form-control" name="userInfo.userName" maxlength="20"/>
 		         	</div>
                 </TD>
                 <TD style="HEIGHT: 28px" width=100>
@@ -62,7 +62,7 @@
                 </TD>
                 <TD style="HEIGHT: 28px">
                     <div class="col-sm-25">
-		         		<input type="password" class="form-control" name="userInfoVo.userPwd" maxlength="20"/>
+		         		<input type="password" class="form-control" name="userPassword.userPsw" maxlength="20"/>
 		         	</div>
                 </TD>
                 <TD style="HEIGHT: 28px" width=100>

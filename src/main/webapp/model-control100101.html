@@ -1,0 +1,421 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1 user-scalabe=no">
+<title>model-control100101</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-datetimepicker.css">
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>
+<script type="text/javascript">
+    $(".form_datetime").datetimepicker({
+        format: "dd MM yyyy - hh:ii",
+        autoclose: true,
+        todayBtn: true,
+        pickerPosition: "bottom-left"
+    });
+</script>   
+<style type="text/css">
+   .STYLE1 {color: #FD6A1C;}
+</style>
+
+</head>
+  <body>
+ <!--中间区域 -->	
+      <div class="container">
+     <ol class="breadcrumb">
+       <li><a href="#">管理首页</a></li>
+       <li><a href="#">栏目</a></li>
+       <li><a href="#">增加栏目</a></li>
+     </ol>
+     <div class="row">
+       <div class="col-md-12 col-lg-12 ">
+        <div class="panel panel-default">
+         <div class="panel-body table table-responesive">
+          <form action="#" method="post" class="form-inline">
+           <fieldset>
+              <table class="table  table-bordered  table-condensed" >
+                  <tr>
+	                  <td class="col-sm-2 info" align="right" >商户全称：</td>
+	                  <td class="col-sm-4" > <input type="text" class="form-control input-sm " name="merName" placeholder="输入用户名"/><span class="STYLE1">*</span></td>
+	                  <td class="col-sm-2 info" align="right">商户简称：</td>
+	                  <td class="col-sm-4"><input type="text" class="form-control input-sm" name="merShortName" placeholder="输入用户名" /><span class="STYLE1">*</span></td>
+	               </tr>
+	              <tr>
+	                  <td class="col-sm-2 info" align="right">营业地址：</td>
+	                  <td class="col-sm-10" colspan="3">  
+	                     <div class="form-group">
+	                        <select name="ss">
+	                           <option value="1">请选择</option>
+					           <option value="1">中国</option>
+					           <option value="2">美国</option>
+					           <option value="3">英国</option>
+					           <option value="4">法国</option>
+					        </select> 
+	                        <select name="ss">
+	                           <option value="1">请选择</option>
+					           <option value="1">中国</option>
+					           <option value="2">美国</option>
+					           <option value="3">英国</option>
+					           <option value="4">法国</option>
+           				   </select> 
+	                       <input type="text" class="form-control input-sm" name="merName" placeholder="输入用户名"/><span class="STYLE1">*</span>
+	                       <span>	邮编：</span> 
+         	               <input type="text"  class="form-control input-sm" name="name" placeholder="输入用户名" /><span class="STYLE1">*</span>
+         	            </div>
+	                  </td>
+	               </tr>
+	               <tr>
+	                  <td class="col-sm-2 info" align="right">注册地址：</td>
+	                  <td class="col-sm-10" colspan="3">  
+	                     <div class="form-group">
+	                        <select name="ss">
+	                           <option value="1">请选择</option>
+					           <option value="1">中国</option>
+					           <option value="2">美国</option>
+					           <option value="3">英国</option>
+					           <option value="4">法国</option>
+					         </select> 
+	                       <select name="ss">
+	                           <option value="1">请选择</option>
+					           <option value="1">中国</option>
+					           <option value="2">美国</option>
+					           <option value="3">英国</option>
+					           <option value="4">法国</option>
+           				   </select> 
+	                     <input type="text" class="form-control input-sm" name="merName" /><span class="STYLE1">*</span>
+	                     <span>	邮编：</span> 
+         	            <input type="text"  class="form-control input-sm" name="name" /><span class="STYLE1">*</span>
+	                   </div>
+	                 </td>
+	              </tr>
+	              <tr>
+	                  <td class="col-sm-2 info" align="right">营业时间：</td>
+	                  <td class="col-sm-4"> 
+	                     <div class="form-group">
+	                        <select name="dd">
+	                           <option value="1">请选择</option>
+					           <option value="1">8:00</option>
+					           <option value="2">9:00</option>
+					           <option value="3">10:00</option>
+					           <option value="4">11:00</option>
+					         </select> 
+					           &nbsp; 至 &nbsp;
+	                       <select name="ss">
+	                           <option value="1">请选择</option>
+					           <option value="1">20:00</option>
+					           <option value="2">21:00</option>
+					           <option value="3">22:00</option>
+					           <option value="4">23:00</option>
+           				   </select> 
+           				   <span class="STYLE1">*</span>
+           				 </div>
+	                  </td>
+	                  <td class="col-sm-2 info" align="right">pos类型：</td>
+	                  <td class="col-sm-4">
+	                    <div class="form-group">
+	                      <input type="radio" name="posType" value="1"/>网络
+	                      <input type="radio" name="posType" value="1"/>电话
+	                      <input type="radio" name="posType" value="1"/>移动
+	                      <input type="radio" name="posType" value="1"/>其他
+	                      <span class="STYLE1">*</span>
+	                     </div>
+	                  </td>
+	               </tr>
+	                <tr>
+	                  <td class="col-sm-2 info" align="right">固定电话：</td>
+	                  <td class="col-sm-4"> <input type="text" class="form-control input-sm" name="merName"/><span class="STYLE1">*</span></td>
+	                  <td class="col-sm-2 info" align="right">传真：</td>
+	                  <td class="col-sm-4"><input type="text" class="form-control input-sm" name="merShortName" /></td>
+	               </tr>
+	                <tr>
+	                  <td class="col-sm-2 info" align="right">三证合一：</td>
+	                  <td class="col-sm-4 " colspan="3"> 
+	                  <input type="checkbox"  name="merName"/>
+	                  </td>
+	               </tr>
+	                <tr>
+	                  <td class="col-sm-2 info" align="right">组织机构代码：</td>
+	                  <td class="col-sm-4"> <input type="text" class="form-control input-sm" name="merName"/></td>
+	                  <td class="col-sm-2 info" align="right">税务登记证号：</td>
+	                  <td class="col-sm-4"><input type="text" class="form-control input-sm" name="merShortName" /></td>
+	               </tr>
+	                <tr>
+	                  <td class="col-sm-2 info" align="right">营业执照编号：</td>
+	                  <td class="col-sm-4"> <input type="text" class="form-control input-sm" name="merName" placeholder="输入用户名"/><span class="STYLE1">*</span></td>
+	                  <td class="col-sm-2 info" align="right">营业执照有效日期：</td>
+	                  <td class="col-sm-4">
+		                  <div class="form-group input-append date form_datetime">
+						    <input size="5" type="text" value="" readonly>
+						    <span class="add-on"><i class="glyphicon glyphicon-calendar"></i>&nbsp;至&nbsp;</span>
+						     <input size="5" type="text" value="" readonly>
+						    <span class="add-on"><i class="glyphicon glyphicon-calendar"></i></span>
+						    <span class="STYLE1">*</span>
+						  </div>
+					 </td>
+	               </tr>
+	               <tr>
+	                  <td class="col-sm-2 info" align="right">营业执照注册资金：</td>
+	                  <td class="col-sm-4" colspan="3"> 
+		                 <div class="form-group">
+		                  <input type="text" class="form-control input-sm" name="merName" /><span>万 <span class="STYLE1">*</span>  &nbsp;  （小数点后面保留两位有效数字，所填值≥0，例：***5.10）</span>
+						 </div>
+					 </td>
+	               </tr>
+	               <tr>
+	                  <td class="col-sm-2 info" align="right">所属销售：</td>
+	                  <td class="col-sm-4">
+	                       <select name="ss">
+	                           <option value="1">请选择</option>
+					           <option value="1">销售1</option>
+					           <option value="2">销售2</option>
+					           <option value="3">销售3</option>
+					           <option value="4">销售4</option>
+           				  </select>
+           				  <span class="STYLE1">*</span>
+           				 </td>
+	                  <td class="col-sm-2 info" align="right">法人代表姓名：</td>
+	                  <td class="col-sm-4"><input type="text" class="form-control input-sm" name="merShortName" /><span class="STYLE1">*</span></td>
+	               </tr>
+	                <tr>
+	                  <td class="col-sm-2 info" align="right">法人代表证件类型：</td>
+	                  <td class="col-sm-4">
+	                       <select name="ss">
+	                           <option value="1">请选择</option>
+					           <option value="1">身份证</option>
+					           <option value="2">护照</option>
+					           <option value="3">军官证</option>
+           				  </select> 
+           				  <span class="STYLE1">*</span>
+           				</td>
+	                  <td class="col-sm-2 info" align="right">法人代表证件号：</td>
+	                  <td class="col-sm-4"><input type="text" class="form-control input-sm" name="merShortName" /><span class="STYLE1">*</span></td>
+	               </tr>
+	               <tr>
+	                  <td class="col-sm-2 info" align="right">法人证件有效期：</td>
+	                  <td class="col-sm-4" colspan="3">
+		                  <div class="input-append date form_datetime">
+		                  <input type="radio" name="1" value=""/>
+						    <input size="5" type="text" value="" readonly>
+						    <span class="add-on"><i class="glyphicon glyphicon-calendar"></i>&nbsp;&nbsp;</span>
+						  <input type="radio" name="1" value=""/>长期身份证<span class="STYLE1">*</span>
+						  </div>
+					 </td>
+	               </tr>
+	                <tr>
+	                  <td class="col-sm-2 info" align="right">合同编号</td>
+	                  <td class="col-sm-4"><span>HFPOS</span> <input type="text" class="form-control input-sm" name="merName" /><span class="STYLE1">*</span></td>
+	                  <td class="col-sm-2 info" align="right">合同起止日期：</td>
+	                  <td class="col-sm-4">
+		                  <div class="form-group input-append date form_datetime">
+						    <input size="5" type="text" value="" readonly>
+						    <span class="add-on"><i class="glyphicon glyphicon-calendar"></i>&nbsp;至&nbsp;</span>
+						     <input size="5" type="text" value="" readonly>
+						    <span class="add-on"><i class="glyphicon glyphicon-calendar"></i></span>
+						    <span class="STYLE1">*</span>
+						  </div>
+					 </td>
+	               </tr>
+	               <tr>
+		              <td class="col-sm-2 info" align="right">市场方名称号：</td>
+	                  <td class="col-sm-4"> <input type="text" class="form-control input-sm" name="merName" /></td>
+	                  <td class="col-sm-2 info" align="right">项目组支：</td>
+	                  <td class="col-sm-4">
+	                    <div class="form-group">
+	                   <input type="radio" name="1"/>&nbsp;是&nbsp;&nbsp;&nbsp;<input type="radio" name="1"/>&nbsp;否
+	                    </div>
+	                   </td>
+	               </tr>
+	                <tr>
+		              <td class="col-sm-2 info" align="right">控股股东或实际控制人：</td>
+	                  <td class="col-sm-4" colspan="3"> 
+	                  <input type="text" class="form-control input-sm" name="merName" /><span class="STYLE1">*</span>
+	                  </td>
+	               </tr>
+	               <tr>
+		              <td class="col-sm-2 info" align="right">智能POS代理商号：</td>
+	                  <td class="col-sm-4" colspan="3"> 
+	                  <input type="text" class="form-control input-sm" name="merName" />
+	                  </td>
+	               </tr>
+              </table>
+            </fieldset>
+             <fieldset>
+              <table class="table  table-bordered  table-condensed" >
+                <tr>
+                   <td class="col-sm-2 info" align="right">行业类型：</td>
+	                  <td class="col-sm-4">
+	                  	<select name="ss">
+	                           <option value="1">请选择</option>
+					           <option value="1">销售1</option>
+					           <option value="2">销售2</option>
+					           <option value="3">销售3</option>
+					           <option value="4">销售4</option>
+           				</select> 
+           				<span class="STYLE1">*</span>
+           				</td>
+           			  <td class="col-sm-2 info" align="right">行业编码：</td>
+	                  <td class="col-sm-4">
+	                    <select name="ss">
+	                           <option value="1">请选择</option>
+					           <option value="1">销售1</option>
+					           <option value="2">销售2</option>
+					           <option value="3">销售3</option>
+					           <option value="4">销售4</option>
+           				</select> 
+           				<span class="STYLE1">*</span>
+           			</td>
+                 </tr>
+                 <tr>
+	                  <td class="col-sm-2 info" align="right" >经营内容：</td>
+	                  <td class="col-sm-4" > <input type="text" class="form-control input-sm" name="merName" /><span class="STYLE1">*</span></td>
+	                  <td class="col-sm-2 info" align="right">结算周期： </td>
+	                  <td class="col-sm-4">T+
+	                      <select name="ss">
+					           <option value="1">1</option>
+					           <option value="2">2</option>
+					           <option value="3">3</option>
+					           <option value="4">4</option>
+           				  </select> 
+	                  </td>
+	               </tr>
+	               <tr>
+	                  <td class="col-sm-2 info" align="right">手续费类型： </td>
+	                  <td class="col-sm-4" colspan="3">
+	                      <select name="ss">
+	                           <option value="0">请选择</option>
+					           <option value="1">标准类</option>
+					           <option value="2">减免类</option>
+					           <option value="3">优惠类</option>
+           				  </select> 
+           				  <span class="STYLE1">*</span>
+	                  </td>
+	               </tr>
+	               <tr>
+	                 <td class="col-sm-2 info" align="right">借记卡签约手续费率：  </td>
+	                  <td class="col-sm-4">
+	                   <div class="form-group">
+	                     <input type="text" class="form-control input-sm" name="merName" size="10"/>
+	                      <span>%</span><span class="STYLE1">*</span><span>封顶值：</span> 
+         	             <input type="text"  class="form-control input-sm" name="name" size="10" />
+	                   </div>
+	                  </td>
+	                  <td class="col-sm-2 info" align="right">贷记卡签约手续费率： </td>
+	                  <td class="col-sm-4" >
+	                       <input type="text" class="form-control input-sm" name="merName" />%<span class="STYLE1">*</span>
+	                  </td>
+	               </tr>
+	               <tr>
+	                  <td class="col-sm-2 info" align="right">开户地： </td>
+	                  <td class="col-sm-4" colspan="">
+	                      <select name="ss">
+	                           <option value="0">请选择</option>
+					           <option value="1">标准类</option>
+					           <option value="2">减免类</option>
+					           <option value="3">优惠类</option>
+           				  </select> 
+           				  <select name="ss">
+	                           <option value="0">请选择</option>
+					           <option value="1">标准类</option>
+					           <option value="2">减免类</option>
+					           <option value="3">优惠类</option>
+           				  </select> 
+	                  </td>
+	                  <td class="col-sm-2 info" align="right">银行名称： </td>
+	                  <td class="col-sm-4" colspan="">
+	                      <select name="ss">
+	                           <option value="0">请选择</option>
+					           <option value="1">中国工商银行</option>
+					           <option value="3">中国农业银行</option>
+           				  </select> 
+           				  <span class="STYLE1">*</span>
+	                  </td>
+	                 </tr>
+	                  
+	                  <tr>
+	                  <td class="col-sm-2 info" align="right">支行名称： </td>
+	                  <td class="col-sm-4" colspan="">
+	                      <select name="ss">
+	                           <option value="0">请选择</option>
+					           <option value="1">标准类</option>
+					           <option value="2">减免类</option>
+					           <option value="3">优惠类</option>
+           				  </select> 
+	                  </td>
+	                  <td class="col-sm-2 info" align="right">开户账号名称： </td>
+	                  <td class="col-sm-4" >
+	                       <input type="text" class="form-control input-sm" name="merName" /><span class="STYLE1">*</span>
+	                  </td>
+	               </tr>
+	               <tr> 
+	                  <td class="col-sm-2 info" align="right">开户银行账号： </td>
+	                  <td class="col-sm-4" >
+	                       <input type="text" class="form-control input-sm" name="merName" /><span class="STYLE1">*</span>
+	                  </td>
+	                   <td class="col-sm-2 info" align="right">开户银行账号确认 ： </td>
+	                  <td class="col-sm-4" >
+	                       <input type="text" class="form-control input-sm" name="merName" /><span class="STYLE1">*</span>
+	                  </td>
+	               </tr>
+	               <tr> 
+	                  <td class="col-sm-2 info" align="right">开户人身份证号码： </td>
+	                  <td class="col-sm-4" colspan="3">
+	                       <input type="text" class="form-control input-sm" name="merName" />
+	                  </td>
+	               </tr>
+	               <tr> 
+	                <td class="col-sm-2 info" align="right">是否支持手续费返还：</td>
+	                  <td class="col-sm-4"> 
+		                  <div  class="form-group'">
+		                  	<input type="radio" name="1"/>&nbsp;是&nbsp;&nbsp;&nbsp;<input type="radio" name="1"/>&nbsp;否<span class="STYLE1">*</span>
+		                  </div>
+	                  </td>
+	                <td class="col-sm-2 info" align="right">手续费返还阈值： </td>
+	                  <td class="col-sm-4">
+	                       <input type="text" class="form-control input-sm" name="merName" />
+	                  </td>  
+	               </tr>
+	              <tr> 
+	                <td class="col-sm-2 info" align="right">是否支持TS：</td>
+	                  <td class="col-sm-4" colspan="3">
+	                  <div  class="form-group'">
+	                    <input type="radio" name="3"/>&nbsp;是&nbsp;&nbsp;&nbsp;<input type="radio" name="3"/>&nbsp;否
+	                   </div>
+	                </td>
+	               </tr> 
+              </table>
+              </fieldset>
+            <fieldset>
+              <table class="table  table-bordered  table-condensed" >
+                <tr>
+                   <td class="col-sm-2 info" align="right">联系人姓名：</td>
+	               <td class="col-sm-4" colspan="3" ><input type="text" class="form-control input-sm" name="merName" /><span class="STYLE1">*</span></td>
+               </tr>
+               <tr>
+                  <td class="col-sm-2 info" align="right">联系人手机号：</td>
+	              <td class="col-sm-4" ><input type="text" class="form-control input-sm" name="merName" /><span class="STYLE1">*</span> </td>
+                  <td class="col-sm-2 info" align="right">联系人电话： </td>
+	              <td class="col-sm-4" ><input type="text" class="form-control input-sm" name="merName" /></td>
+               </tr>
+              </table>
+              </fieldset>
+              <fieldset>
+                  <table class="table   table-condensed" >
+                     <tr> 
+                       <td class="col-sm-12" align="center">
+                        <button type="button" class="btn btn-info">提交</button>
+                       </td>
+                     </tr>
+                  </table>
+              </fieldset>
+              </form>
+              </div>
+              </div>
+            </div>
+          </div>
+       </div>
+</body>
+</html>

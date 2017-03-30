@@ -11,6 +11,7 @@ import com.huifu.auth.dao.UserPasswordMapper;
 import com.huifu.auth.entity.UserInfo;
 import com.huifu.auth.entity.UserPassword;
 import com.huifu.auth.entityVo.UserInfoVo;
+import com.huifu.auth.utils.CPublic;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -28,14 +29,17 @@ public class UserServiceImpl implements UserService {
 
 	public void save(UserInfoVo userInfoVo) {
 		try {
+		System.out.println("-------------"+userInfoVo);
+		
 		UserInfo user = new UserInfo();
 		UserPassword pwd = new UserPassword();
-		user.setUserId(1);
-		user.setUserName(userInfoVo.getUserName());
+		user.setUserId(3);
+		user.setUserName(userInfoVo.getUserInfo().getUserName());
 		userMapper.insert(user);
 		
 		pwd.setUserId(user.getUserId());
-		pwd.setUserPsw(userInfoVo.getUserPwd());
+		pwd.setUserPsw(userInfoVo.getUserPassword().getUserPsw());
+		pwd.setLstUpdTime(CPublic.getDateAndTime());
 		userPwdMapper.insert(pwd);
 		System.out.println("-------------------");
 		} catch (Exception e) {

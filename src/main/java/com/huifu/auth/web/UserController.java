@@ -13,7 +13,7 @@ import com.huifu.auth.service.UserService;
 
 
 /*
- * http://localhost:8080/Campus/user/register
+ * http://localhost:8080/Campus/user/registe
  */
 @Controller
 @RequestMapping("/user")
@@ -25,14 +25,14 @@ public class UserController{
     //跳转到注册页面
 	@RequestMapping("/toRegiste")
 	public String toRegist(){
-		System.out.println("注册。。。。。");
+		System.out.println("注册123。。。。。");
 		return "regist"; // regist.jsp
 	}
 	
 	//注册用户
-	@RequestMapping("/register")
+	@RequestMapping("/registe")
 	public String regist(UserInfoVo userInfoVo){
-		System.out.println("注册。。。。。");
+		System.out.println("注册345。。。。。");
 		userService.save(userInfoVo);
 		return "login"; //regist.jsp
 	}

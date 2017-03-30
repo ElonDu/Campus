@@ -1,6 +1,6 @@
 package com.huifu.auth.dao;
 
-import java.io.Serializable;  
+import java.io.Serializable;
 import java.lang.reflect.ParameterizedType;  
 import java.util.List;  
   
@@ -9,8 +9,6 @@ import javax.annotation.Resource;
 import org.hibernate.Query;  
 import org.hibernate.Session;  
 import org.hibernate.SessionFactory;
-import org.springframework.stereotype.Repository;
-
 
 @SuppressWarnings("unchecked")  
 public class BaseDAOImpl<T> implements BaseDAO<T> {
@@ -61,4 +59,6 @@ public class BaseDAOImpl<T> implements BaseDAO<T> {
         }  
         return query.list();  
     }  
+
+	
 }

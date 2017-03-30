@@ -6,4 +6,5 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 	<!-- 开启事务的注解 -->
+	<context:annotation-config/>
 </beans>
